@@ -1,0 +1,61 @@
+.header {
+    min-width: 100%;
+    height: 89px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: #001A33;
+    z-index: 10;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: white;
+        padding: 0 32px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        &:hover {
+            color: #36C3E9;
+            cursor: pointer;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: white;
+        padding: 0 10px;
+        font-size: 30px;
+
+        &:hover {
+            color: #36C3E9;
+            cursor: pointer;
+        }
+    }
+}
