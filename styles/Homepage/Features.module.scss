@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    background: #021323;
 }
 
 .info {
@@ -16,7 +15,6 @@
 
     .info_block {
         padding: 0 30px;
-        height: 234px;
         width: 435px;
         margin: 0 10px;
 
@@ -24,7 +22,6 @@
             font-style: normal;
             font-weight: 500;
             font-size: 48px;
-            line-height: 54px;
             text-transform: capitalize;
             color: white;
         }
@@ -38,7 +35,53 @@
             text-transform: capitalize;
             color: #C1C1C1;
         }
+
+        @media (max-width:1300px) {
+            margin: 0 0;
+            width: 335px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width:900px) {
+            width: 250px;
+        }
+
+        @media (max-width:900px) {
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width:720px) {
+            width: 220px;
+        }
+
     }
+
+    @media (max-width:650px) {
+        flex-direction: column;
+
+        .info_block {
+            width: 90%;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                padding-bottom: 30px;
+                font-size: 15px;
+            }
+        }
+    }
+
 }
 
 .features {
@@ -70,12 +113,41 @@
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
-            line-height: 30px;
             text-align: center;
             letter-spacing: -0.02em;
             text-transform: capitalize;
             color: #FDFDFD;
         }
+
+        @media (max-width:1300px) {
+            margin: 0 20px;
+        }
+
+        @media (max-width:900px) {
+            width: 220px;
+            height: 200px;
+        }
+
+        @media (max-width:800px) {
+            width: 200px;
+            height: 180px;
+            margin: 0 15px;
+        }
+
+        @media (max-width:720px) {
+            width: 180px;
+            height: 180px;
+            margin: 0 10px;
+        }
     }
 
+    @media (max-width:650px) {
+        flex-direction: column;
+        width: 90%;
+
+        .box {
+            width: 90%;
+            margin-bottom: 50px;
+        }
+    }
 }

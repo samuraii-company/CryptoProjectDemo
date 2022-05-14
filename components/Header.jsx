@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/Header.module.scss"
 import { AiFillGithub } from 'react-icons/ai';
 import { FaTelegram } from 'react-icons/fa';
@@ -5,6 +6,7 @@ import { FaTelegram } from 'react-icons/fa';
 import Link from "next/link";
 
 const Header = () => {
+    const [burgerMenu, setBurgerMenu] = React.useState(false);
     return (
         <div className={styles.header}>
             <h1 className={styles.logo}>Alone</h1>
