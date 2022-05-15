@@ -1,0 +1,31 @@
+.wrapper {
+    min-width: 100%;
+    background: #021323;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        margin-top: 30px;
+        max-width: 650px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: #CBCBCB;
+        opacity: 0.6;
+    }
+}
