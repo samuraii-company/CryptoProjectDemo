@@ -6,7 +6,7 @@ import { FaTelegram } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <h1 className={styles.logo}>Alone 2022</h1>
+            <h1 className={styles.logo}>Alone</h1>
             <div className={styles.navbar}>
                 <Link href="/">Company</Link>
                 <Link href="/">Terms and conditions</Link>

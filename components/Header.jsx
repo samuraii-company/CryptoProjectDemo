@@ -1,27 +1,32 @@
-import React from "react";
 import styles from "../styles/Header.module.scss"
-import { AiFillGithub } from 'react-icons/ai';
-import { FaTelegram } from 'react-icons/fa';
-
+import { useState } from "react"
+import { AiFillGithub } from 'react-icons/ai'
+import { FaTelegram } from 'react-icons/fa'
+import Burger from "./Burger";
 import Link from "next/link";
+import navdata from "../utils/headerdata"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 const Header = () => {
-    const [burgerMenu, setBurgerMenu] = React.useState(false);
+    const [burgerMenu, setBurgerMenu] = useState(false);
+
     return (
-        <div className={styles.header}>
-            <h1 className={styles.logo}>Alone</h1>
-            <div className={styles.navbar}>
-                <Link href="/">Dashboard</Link>
-                <Link href="/token">Token</Link>
-                <Link href="/roadmap">RoadMap</Link>
-                <Link href="/price">Pricing</Link>
-                <Link href="/docs">Docs</Link>
+        <>
+            <div className={styles.header}>
+                <h1 className={styles.logo}>Alone</h1>
+                <div className={styles.menu} onClick={() => setBurgerMenu(true)}><GiHamburgerMenu /></div>
+                <div className={styles.navbar}>
+                    {navdata && navdata.map(({ id, title, path }) => (
+                        <Link key={id} href={`/${path}`}>{title}</Link>
+                    ))}
+                </div>
+                <div className={styles.icons}>
+                    <a href="/"><AiFillGithub /></a>
+                    <a href="/"><FaTelegram /></a>
+                </div>
             </div>
-            <div className={styles.icons}>
-                <a href="/"><AiFillGithub /></a>
-                <a href="/"><FaTelegram /></a>
-            </div>
-        </div>
+            <Burger navdata={navdata} burgerstatus={burgerMenu} setBurgerstatus={setBurgerMenu} />
+        </>
     )
 }
 

@@ -12,6 +12,7 @@
     padding: 0 70px;
     background: #001A33;
     z-index: 2;
+
 }
 
 .logo {
@@ -40,6 +41,10 @@
             cursor: pointer;
         }
     }
+
+    @media (max-width: 950px) {
+        display: none;
+    }
 }
 
 .icons {
@@ -57,5 +62,20 @@
             color: #36C3E9;
             cursor: pointer;
         }
+    }
+
+    @media (max-width: 950px) {
+        display: none;
+    }
+}
+
+.menu {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 950px) {
+        display: block;
     }
 }
