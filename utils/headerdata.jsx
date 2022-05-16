@@ -17,7 +17,7 @@ const navdata = [
     {
         "id": 4,
         "path": "price",
-        "title": "Pricing"
+        "title": "Buy Token"
     },
     {
         "id": 5,

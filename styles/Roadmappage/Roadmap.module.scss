@@ -1,0 +1,120 @@
+.wrapper {
+    min-width: 100%;
+    background: #021323;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 650px) {
+        padding: 100px 20px;
+    }
+
+    .heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+
+        @media (max-width:700px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 650px) {
+            font-size: 35px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.text_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+        @media (max-width: 650px) {
+            font-size: 25px;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #021323;
+
+        &:hover {
+            cursor: pointer;
+            background: #014C93;
+            color: white;
+        }
+    }
+}
+
+.roadmap_wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    height: 150px;
+    background: #0C2F50;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 0 20px;
+
+    @media (max-width: 900px) {
+        min-width: 600px;
+    }
+
+    @media (max-width: 650px) {
+        min-width: 400px;
+    }
+
+    @media (max-width: 450px) {
+        min-width: 300px;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: lowercase;
+        color: #B9B2B2;
+    }
+}
