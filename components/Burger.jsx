@@ -17,8 +17,8 @@ const Burger = ({ navdata, burgerstatus, setBurgerstatus }) => {
                 </li>
             ))}
             <div className={styles.icons}>
-                <a href="/"><AiFillGithub /></a>
-                <a href="/"><FaTelegram /></a>
+                <a href="https://github.com/samuraii-company?tab=repositories"><AiFillGithub /></a>
+                <a href="https://t.me/Samuraiii143"><FaTelegram /></a>
             </div>
         </div>
     )
