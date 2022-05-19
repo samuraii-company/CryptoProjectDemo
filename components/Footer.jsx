@@ -8,10 +8,10 @@ const Footer = () => {
         <div className={styles.footer}>
             <h1 className={styles.logo}>Alone</h1>
             <div className={styles.navbar}>
-                <Link href="/">Company</Link>
-                <Link href="/">Terms and conditions</Link>
-                <Link href="/">Privacy policy</Link>
-                <Link href="/">Contact Us</Link>
+                <Link href="/about">Company</Link>
+                <Link href="/terms">Terms and conditions</Link>
+                <Link href="/privacy">Privacy policy</Link>
+                <a href="https://t.me/Samuraiii143">Contact Us</a>
             </div>
             <div className={styles.icons}>
                 <a href="https://github.com/samuraii-company?tab=repositories"><AiFillGithub /></a>
