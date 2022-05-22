@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <>
             <div className={styles.header}>
-                <h1 className={styles.logo}>Alone</h1>
+                <Link href="/"><h1 className={styles.logo}>Alone</h1></Link>
                 <div className={styles.menu} onClick={() => setBurgerMenu(true)}><GiHamburgerMenu /></div>
                 <div className={styles.navbar}>
                     {navdata && navdata.map(({ id, title, path }) => (
